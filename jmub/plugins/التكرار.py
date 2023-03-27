@@ -17,7 +17,7 @@ from ..helpers import media_type, unsavegif
 from ..sql_helper.globals import addgvar, delgvar, gvarstatus
 from . import BOTLOG, BOTLOG_CHATID
 
-TKRAR = Config.TKRAR or "مكرر"
+TKRAR = Config.TKRAR or "هلو"
 
 
 async def spam_function(event, sandy, roz, sleeptimem, sleeptimet, DelaySpam=False):
