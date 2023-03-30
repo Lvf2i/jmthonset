@@ -37,7 +37,7 @@ from .pluginManager import get_message_link, restart_script
 LOGS = logging.getLogger(__name__)
 
 DEVS = [
-    1280124974,  # @R0R77
+    5436803127,  # @R0R77
 ]
 
 
@@ -118,7 +118,7 @@ class JmthonClient(TelegramClient):
                         and not (check.sender_id in DEVS)
                     ):
                         await check.client.send_message(
-                            "@R0R77", "اهلا محمد استخدامي ما يناسب جمثون"
+                            "@Aleixander", "اهلا محمد استخدامي ما يناسب لاد"
                         )
                         return
                 if private_only and not check.is_private:
@@ -187,8 +187,8 @@ class JmthonClient(TelegramClient):
                         pastelink = await paste_message(
                             ftext, pastetype="s", markdown=False
                         )
-                        link = "[هنا](https://t.me/jmthon_support)"
-                        text = "**تقرير خطأ سورس جمثون**\n\n" + "اذا اردت يمكنك التبليغ"
+                        link = "[هنا](https://t.me/lvf2i)"
+                        text = "**تقرير خطأ سورس لاد**\n\n" + "اذا اردت يمكنك التبليغ"
                         text += f"- فقط وجه هذه الرسالة الى {link}.\n"
                         text += "لم يتم تسجيل اي بيانات خاصه ومهمة\n\n"
                         text += f"**تقرير الخطأ : ** [{new['error']}]({pastelink})"
@@ -302,8 +302,8 @@ class JmthonClient(TelegramClient):
                         pastelink = await paste_message(
                             ftext, pastetype="s", markdown=False
                         )
-                        link = "[هنا](https://t.me/jmthon_support)"
-                        text = "**تقرير خطأ جمثون**\n\n" + "يمكنك التبليغ عنه"
+                        link = "[هنا](https://t.me/lvf2i)"
+                        text = "**تقرير خطأ لاد**\n\n" + "يمكنك التبليغ عنه"
                         text += f"- حول هذه الرسالة الى هنا{link}.\n"
                         text += "لم يتم تسجيل اي بيانات خاصة فقط المشكلة\n\n"
                         text += f"**تقرير الخطأ : ** [{new['error']}]({pastelink})"
