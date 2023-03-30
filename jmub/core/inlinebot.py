@@ -30,7 +30,7 @@ from .logger import logging
 LOGS = logging.getLogger(__name__)
 
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
-CATLOGO = "https://graph.org/file/88f00e9c84c0a01207adb.jpg"
+CATLOGO = "https://telegra.ph/file/3c2f92ac0c013d952e318.jpg"
 tr = Config.COMMAND_HAND_LER
 
 
@@ -421,7 +421,7 @@ async def inline_handler(event):
             _result = main_menu()
             result = builder.article(
                 title="jmub Help™",
-                description="**▾∮ قائمة التعليمات الخاصة ب جمثون **",
+                description="**▾∮ قائمة التعليمات الخاصة ب Aleixander **",
                 text=_result[0],
                 buttons=_result[1],
                 link_preview=False,
@@ -569,14 +569,14 @@ async def inline_handler(event):
             url=CATLOGO, size=0, mime_type="image/jpeg", attributes=[]
         )
         text, msg_entities = await event.client._parse_message_text(
-            "لجعل جمثون من نصيبك!", "md"
+            "لجعل Aleixander من نصيبك!", "md"
         )
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="[𝙅𝙈𝙏𝙃𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🧸♥](https://t.me/JMTHON)",
+            title="[ 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🧸♥](https://t.me/lvf2i)",
             description="لتنصيبه لك",
-            url="t.me/JMTHON",
+            url="t.me/lvf2i",
             thumb=photo,
             content=photo,
             send_message=types.InputBotInlineMessageMediaAuto(
