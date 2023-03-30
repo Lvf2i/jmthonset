@@ -31,7 +31,7 @@ from .pluginmanager import load_module
 from .tools import create_supergroup
 
 ENV = bool(os.environ.get("ENV", False))
-LOGS = logging.getLogger("اعداد جمثون")
+LOGS = logging.getLogger("اعداد Aleixander")
 cmdhr = Config.COMMAND_HAND_LER
 
 if ENV:
@@ -100,7 +100,7 @@ async def mybot():
     f"ـ {rz_ment}"
     f"⪼ هذا هو بوت خاص بـ {rz_ment} يمكنك التواصل معه هنا"
     starkbot = await jmub.tgbot.get_me()
-    perf = "[ جمثون ]"
+    perf = "[ Aleixander ]"
     bot_name = starkbot.first_name
     botname = f"@{starkbot.username}"
     if bot_name.endswith("Assistant"):
@@ -111,7 +111,7 @@ async def mybot():
             await asyncio.sleep(1)
             await jmub.send_message(
                 "@jmthon_bot",
-                "تم بنجاح تشغيل سورس جمثون عزيزي المستخدم هذا البوت سيتم تشغيله قريبا بعد اكماله",
+                "تم بنجاح تشغيل سورس Aleixander عزيزي المستخدم هذا البوت سيتم تشغيله قريبا بعد اكماله",
             )
             await asyncio.sleep(1)
             await jmub.send_message("@BotFather", "/setinline")
@@ -130,8 +130,8 @@ async def startupmessage():
             if BOTLOG:
                 await jmub.tgbot.send_file(
                     BOTLOG_CHATID,
-                    "https://graph.org//file/c20c4f492da1811e1bef0.jpg",
-                    caption="**شكرا لتنصيبك سورس جمثون**\n • هنا بعض الملاحظات التي يجب ان تعرفها عن استخدامك لسورس جمثون.",
+                    "https://telegra.ph/file/d391216c93668feaf3b40.jpg",
+                    caption="**شكرا لتنصيبك سورس Aleixander**\n • هنا بعض الملاحظات التي يجب ان تعرفها عن استخدامك لسورس Aleixander.",
                     buttons=[(Button.inline("اضغط هنا", data="initft_2"),)],
                 )
                 addgvar("DEPLOY", "Done")
@@ -142,9 +142,9 @@ async def startupmessage():
             if BOTLOG:
                 await jmub.tgbot.send_message(
                     BOTLOG_CHATID,
-                    "**لقد تم بنجاح تنصيب سورس جمثون **\n➖➖➖➖➖➖➖➖➖➖\n**السورس**: @jmthon\n**المطور**: @R0R77\n➖➖➖➖➖➖➖➖➖➖\n**مجموعة الدعم**: @jmthon_support\n➖➖➖➖➖➖➖➖➖➖",
+                    "**لقد تم بنجاح تنصيب سورس Aleixander **\n➖➖➖➖➖➖➖➖➖➖\n**السورس**: @lvf2i\n**المطور**: @Aleixander\n➖➖➖➖➖➖➖➖➖➖\n**مجموعة الدعم**: @lvf2i\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
-                        (Button.url("كروب المساعدة", "https://t.me/jmthon_support"),)
+                        (Button.url("المطور", "https://t.me/Aleixander"),)
                     ],
                 )
         except Exception as e:
@@ -326,7 +326,7 @@ async def verifyLoggerGroup():
         descript = "⪼ هذه هي مجموعه الحفظ الخاصه بك لا تحذفها ابدا  𓆰."
         photobt = await jmub.upload_file(file="razan/pic/Jmthonp.jpg")
         _, groupid = await create_supergroup(
-            "كروب بوت جمثون", jmub, Config.TG_BOT_USERNAME, descript, photobt
+            "كروب بوت Aleixander", jmub, Config.TG_BOT_USERNAME, descript, photobt
         )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print("تم انشاء كروب الحفظ بنجاح")
